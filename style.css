@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Poppins", "sans serif";
+  padding: 150px;
+}
+
+.section-hero {
+  flex: 60%;
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 40px;
+}
+
+.hero-text {
+  color: #fff;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.reg-form {
+  flex: 40%;
+}
+
+.reg-form-text {
+  background-color: hsl(248, 32%, 49%);
+  color: #fff;
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 11px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.reg-form-text span {
+  font-family: "Poppins", "sans serif";
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 11px;
+  box-shadow: 0 8px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  font-family: "Poppins", "sans serif";
+  font-weight: 400;
+  padding: 16px 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+}
+
+.claim {
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0px hsl(249, 10%, 26%);
+  transition: all 0.3s;
+}
+
+.claim:hover {
+  background-color: hsl(154, 82%, 75%);
+}
+
+.form-text {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.form-text span {
+  color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .claim {
+    font-size: 10px;
+  }
+
+  .form-text {
+    font-size: 9px;
+  }
+}
