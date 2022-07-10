@@ -33,6 +33,7 @@ body {
 
 .reg-form {
   flex: 40%;
+  /* width: 100%; */
 }
 
 .reg-form-text {
@@ -135,9 +136,10 @@ body {
   body {
     flex-direction: column;
     height: 100%;
+    padding: 35px;
   }
 
-  .claim {
+  .form button {
     font-size: 10px;
   }
 
