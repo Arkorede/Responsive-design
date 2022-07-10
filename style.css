@@ -46,30 +46,65 @@ body {
 }
 
 .reg-form-text span {
-  font-family: "Poppins", "sans serif";
+  font-family: inherit;
   font-weight: 600;
 }
 
-form {
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
-
-  background-color: #fff;
+.form {
   padding: 40px;
+  background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 8px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
-input {
-  font-family: "Poppins", "sans serif";
-  font-weight: 400;
-  padding: 16px 10px;
-  border: 1px solid hsl(246, 25%, 77%);
-  border-radius: 5px;
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
-.claim {
+.form-control input {
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+
+.form-control.error input {
+  border-color: hsl(0, 100%, 74%);
+}
+
+.form-control svg {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  visibility: hidden;
+}
+
+.form-control.error svg {
+  visibility: visible;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  font-family: inherit;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
   background-color: hsl(154, 59%, 51%);
   color: #fff;
   font-weight: 600;
@@ -81,7 +116,7 @@ input {
   transition: all 0.3s;
 }
 
-.claim:hover {
+.form button:hover {
   background-color: hsl(154, 82%, 75%);
 }
 
@@ -89,6 +124,7 @@ input {
   font-size: 13px;
   font-weight: 400;
   text-align: center;
+  margin-top: 15px;
 }
 
 .form-text span {

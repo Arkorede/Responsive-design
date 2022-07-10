@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Responsive Design</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32 (1).png" />
   </head>
   <body>
     <section class="section-hero">
@@ -30,37 +31,84 @@
       <p class="reg-form-text">
         <span>Try it free 7 days</span> then $20/mo. thereafter
       </p>
-      <form action="">
-        <input
-          type="text"
-          name="fname"
-          placeholder="First Name"
-          maxlength="12"
-          minlength="3"
-          required
-        />
 
-        <input
-          type="text"
-          name="lastname"
-          placeholder="Last Name"
-          maxlength="12"
-          minlength="3"
-          required
-        />
+      <form action="" class="form" id="form">
+        <div class="form-control">
+          <input
+            type="text"
+            name="fname"
+            placeholder="First Name"
+            maxlength="12"
+            minlength="3"
+            id="firstname"
+          />
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#FF7979" cx="12" cy="12" r="12" />
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+            </g>
+          </svg>
+          <small>Error message</small>
+        </div>
 
-        <input type="email" name="email" placeholder="Email Adress" required />
+        <div class="form-control">
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Last Name"
+            maxlength="12"
+            minlength="3"
+            id="lastname"
+          />
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#FF7979" cx="12" cy="12" r="12" />
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+            </g>
+          </svg>
+          <small>Error message</small>
+        </div>
 
-        <input
-          type="password"
-          name="psw"
-          placeholder="Password"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-          title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
-          required
-        />
+        <div class="form-control">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            id="email"
+          />
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#FF7979" cx="12" cy="12" r="12" />
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+            </g>
+          </svg>
+          <small>Error message</small>
+        </div>
 
-        <input class="claim" type="submit" value="claim your free trial" />
+        <div class="form-control">
+          <input
+            type="password"
+            name="psw"
+            placeholder="Password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+            id="password"
+          />
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#FF7979" cx="12" cy="12" r="12" />
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+            </g>
+          </svg>
+          <small>Error message</small>
+        </div>
+
+        <!-- <input class="claim" type="submit" value="claim your free trial" /> -->
+        <button>claim your free trial</button>
 
         <p class="form-text">
           By clicking the button you are agreeing to our
@@ -68,5 +116,6 @@
         </p>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
