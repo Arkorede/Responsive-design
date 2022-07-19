@@ -74,6 +74,10 @@ body {
   width: 100%;
 }
 
+.form-control.success input {
+  border-color: hsl(246, 25%, 77%);
+}
+
 .form-control.error input {
   border-color: hsl(0, 100%, 74%);
 }
@@ -83,6 +87,10 @@ body {
   top: 8px;
   right: 16px;
   visibility: hidden;
+}
+
+.form-control.success svg {
+  visibility: hidden
 }
 
 .form-control.error svg {
